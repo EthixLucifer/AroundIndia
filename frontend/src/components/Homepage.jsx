@@ -15,11 +15,17 @@ const Homepage = () => {
                     <svg class="w-4 h-4 me-2 -ms-1 text-[#626890]" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path></svg>
                     Register as a Voter
                 </button>
-
-                <button type="button" class="text-white font-semibold -900 bg-green-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 mt-10 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2">
+                <button type="button" class="text-white font-semibold -900 bg-green-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 mt-5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2">
                     <svg class="w-4 h-4 me-2 -ms-1 text-[#626890]" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path></svg>
                     Register as a Politician
                 </button>
+
+                <button type="button" class="text-white font-semibold -900 bg-green-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mt-5 mb-2">
+                    <svg class="w-4 h-4 me-2 -ms-1 text-[#626890]" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path></svg>
+                    Register as Government Admin
+                </button>
+
+
 
                 <div className="text-center  text-gray-900 mt-28 bg-orange-500 h-40 rounded-md p-4">
                     <p className="text-white font-semibold text-lg">

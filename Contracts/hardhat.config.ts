@@ -20,11 +20,19 @@ const config: HardhatUserConfig = {
       accounts: [process.env.WALLET_KEY as string],
       gasPrice: 1000000000,
     },
-    // for local dev environment
-    'base-local': {
-      url: 'http://localhost:8545',
-      accounts: [process.env.WALLET_KEY as string],
-      gasPrice: 1000000000,
+    // // for local dev environment
+    // 'base-local': {
+    //   url: 'http://localhost:8545',
+    //   accounts: [process.env.WALLET_KEY as string],
+    //   gasPrice: 1000000000,
+    // },
+
+    localhost: {
+      chainId: 1337 // You can set your custom chain ID here
+    },
+    hardhat: {
+      // url: 'http://localhost:8545',
+      chainId: 1337 // Default chainId for Hardhat Network
     },
   },
   defaultNetwork: 'hardhat',
