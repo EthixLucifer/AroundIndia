@@ -31,8 +31,8 @@ const config: HardhatUserConfig = {
       chainId: 1337 // You can set your custom chain ID here
     },
     hardhat: {
-      // url: 'http://localhost:8545',
-      chainId: 1337 // Default chainId for Hardhat Network
+      // url: 'http://127.0.0.1:8545',
+      chainId: 1337, // Default chainId for Hardhat Network
     },
   },
   defaultNetwork: 'hardhat',

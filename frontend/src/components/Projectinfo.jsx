@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEnhancedVotingDAO } from './ContractInteraction';
 import { useAddress, useContractWrite } from "@thirdweb-dev/react";
 
-const Politician = () => {
+const Projectinfo = () => {
     const address = useAddress();
     const contractAddress = process.env.REACT_APP_ADDRESS;
     const [area, setArea] = useState('');
@@ -15,7 +15,6 @@ const Politician = () => {
     const [registerLoading, setRegisterLoading] = useState(false); // Add this line
 
     const {
-        contract,
         useReadProjectDetails,
         useReadPoliticianDetails,
         useReadPoliticianReputation,
@@ -87,47 +86,9 @@ const Politician = () => {
 
     return (
         <div className="bg-white rounded-lg shadow-lg p-8 mt-10 max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 border-b-2 pb-4 mb-8 border-blue-500">
+            <h2 className="text-4xl font-semibold text-gray-800 border-b-2 pb-4 mb-8 border-blue-500">
                 Politician Information Center
             </h2>
-
-            {/* Register Politician Form */}
-            <form onSubmit={handleRegisterPolitician} className="mb-12">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Register Politician</h3>
-                <div className="grid grid-cols-2 gap-6">
-                    <input
-                        type="text"
-                        value={area}
-                        onChange={(e) => setArea(e.target.value)}
-                        placeholder="Area Under Administration"
-                        className="shadow-md bg-gray-100 border border-gray-300 text-gray-800 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
-                        required
-                    />
-                    <input
-                        type="text"
-                        value={designation}
-                        onChange={(e) => setDesignation(e.target.value)}
-                        placeholder="Designation"
-                        className="shadow-md bg-gray-100 border border-gray-300 text-gray-800 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
-                        required
-                    />
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        placeholder="Name"
-                        className="shadow-md bg-gray-100 border border-gray-300 text-gray-800 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
-                        required
-                    />
-                </div>
-                <button
-                    type="submit"
-                    className="mt-8 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-semibold rounded-lg text-lg px-6 py-3 w-full"
-                    disabled={registerLoading}
-                >
-                    {registerLoading ? 'Registering...' : 'Register Politician'}
-                </button>
-            </form>
 
             {/* Get Politician Details Form */}
             <form onSubmit={handleGetPoliticianDetails} className="mb-12">
@@ -221,7 +182,5 @@ const Politician = () => {
         </div>
     );
 
-
 }
-
-export default Politician;
+    export default Projectinfo;

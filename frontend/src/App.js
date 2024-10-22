@@ -31,7 +31,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import User from './components/User';
 import Politician from './components/Politician';
 import Admin from './components/Admin';
@@ -46,7 +46,7 @@ function App() {
         <Route path="/politician" element={<Politician />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
